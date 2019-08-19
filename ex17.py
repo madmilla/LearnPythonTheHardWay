@@ -18,7 +18,6 @@ out_file = open(to_file, 'w').write(open(from_file).read())
 #
 #
 # print("Alright, all done")
-print(out_file)
 # out_file.close()
 # in_file.close()
 
