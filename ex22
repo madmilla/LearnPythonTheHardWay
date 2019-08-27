@@ -1,0 +1,53 @@
+print() // Print command // prints text or a variable
++ // Add // Either concates a piece of text or adds a number to a value
+- // Minus // reduce a value by a value
+% // Module // Do a modulo calculation and show the remainder
+/ // Divide //  Divide a number by a value
+> // Bigger than
+>= // Bigger or equal to
+<= // Smaller or equal to
+= // equal
+{types_of_people} // print a variable in a text use f"" to use variables in text
+print(end1 + end2 + end3 + end4 + end5 + end6, end=' ') // concate all the end# with a space
+{}.format("snow") // Puts snow into the empty variable indicator
+formatter = "{} {} {} {}"
+print(formatter.format(1,2,3,4)) // prints 1 2 3 4 in place of the indicators
+print(""" // Multiline comments
+""")
+\t // Tab
+\\ // a slash
+\' // a single '
+\" // a single "
+\a // Ascii bell
+\b // Ascii backspace
+\f // ascii formfeed
+\n // ascii linefeed
+\r // Carriage Return
+\ooo // Character with octal value 000
+\x77 // Character with hev value hh
+\v // Ascii vertical tab
+input() // ask user for input
+from sys import argv // import the argv feature from the sys library
+# read the WYSS section for how to run this
+
+if len(argv)==5: // if statement
+script, first, second, third, four = argv // take the arguments and map them to the variables
+txt.read() // read from a file
+txt = open(filename) // open a file
+target.readline() // read a line from a file
+target.truncate() // empty the file
+target.write() // write to a file
+out_file = open(to_file, 'w').write(open(from_file).read())
+def print_two(*args): // method
+f.seek(0) // seek a position in a file
+'w' write
+'r' read
+'a' append
+w+ // open the file  in both read and write mode and depending
+ on which character position the file in different ways.
+r+ // open the file  in both read and write mode and depending
+ on which character position the file in different ways.
+a+ // open the file  in both read and write mode and depending
+ on which character position the file in different ways.
+
+ python -m pydoc input
