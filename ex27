@@ -1,0 +1,41 @@
+ex27
+
+NOT         TRUE?
+not false   TRUE
+not True    false
+
+OR              TRUE?
+True or false   TRUE
+True or True    TRUE
+False or True   true
+false or false  False
+
+And             True?
+True and false  False
+true and true   TRUE
+false and true  False
+false and false False
+
+not or          true?
+not (true or false)   False
+not (true or true)    False
+not (false or true)   False
+not (false or false)  TRUE
+
+Not and               true?
+not (True and false)  TRUE
+not (true and true)   False
+not (false and true)  TRUE
+not (false and false) true
+
+!=
+1 != 0  TRUE
+1 != 1  False
+0 != 1  TRUE
+0 != 0  False
+
+==
+1 == 0  False
+1 == 1  TRUE
+0 == 1  False
+0 == 0  TRUE
