@@ -32,3 +32,78 @@ try         Try this block, and if exception, go to except.                     
 while       While loop.                                                         while X: pass
 with        With an expression as a variable do.                                with X as Y: pass
 yield       Pause here and return to caller                                     def X(): yield Y; X().next()
+
+# Datatypes
+#
+    Type        Description                                                     examples
+True        True boolean value.                                                 True or False == TRUE
+False       False boolean value.                                                False and True == False
+None        Represents "nothing" or "No value"                                  X = None
+bytes       Stores bytes, maybe of text, PNG, file, etc.                        x = b"Hello"
+strings     Stores textual information                                          x = "Hello"
+numbers     Stores integers                                                     i = 100
+floats      Stores decimals                                                     i = 10.389
+lists       Stores a list of thigns                                             j = [1,2,3,4]
+dicts       Stores a key=values mappings of things.                             e = {'x': 1, 'y': 2}
+
+String excape sequences
+Escape      Description
+\\          backslash
+\'          Single-quote
+\"          Double-quote
+\a          bell
+\b          backspace
+\f          Formfeed
+\n          NewLine
+\r          Carriage
+\t          tab
+\v          Vertical Tab
+
+Escape      Description                                     examples
+%d          Decimal integers (not floating point )          "%d" % 45 == '45'
+%i          Same as %i                                      "%i" % 45 == '45'
+%o          Octal number                                    "%o" % 1000 == '1750'
+%u          Unsigned decimal                                "%u" % -1000 == '-1000'
+%x          Hexadecimal lowercase                           "%x" % 1000 == '3e8'
+%X          Hexadecimal uppercase                           "%X" % 1000 == '3e8'
+%e          Exponential notation, lowercase 'e'             "%e" % 1000 == '1.000000e+03'
+%E          Exponential notation, Uppercase 'E'             "%E" % 1000 == '1.000000E+03'
+%f          Floating point real number                      "%f" % 10.34 == '10.340000'
+%F          Same as %f                                      "%F" % 10.34 == '10.340000'
+%g          Either %f or %e whichever is shorter.           "%g" % 10.34 == '10.34'
+%G          Same as %g but uppercase                        "%G" % 10.34 == '10.34'
+%c          Character format                                "%c" % 34 == '"'
+%r          Repr format (debugging format)                  "%r" % int == "<type 'int'>"
+%s          String format                                   "%s there" % 'hi' == 'hi there'
+%%          A percentage sign                               "%g%%" % 10.34 == '10.34%'
+
+Operator    Description                                     Example
++           Addition                                        2 + 4 == 6
+-           Subtraction                                     2 - 4 == -2
+*           Multiplication                                  2 * 4 == 8
+**          Power of                                        2 ** 4 == 16
+/           Division                                        2 / 4  == 0.5
+//          Floor division                                  2 // 4 == 0
+%           String interpolate or modulus                   2 % 4 == 2
+<           Less than                                       4 < 4 == False
+>           Greater than                                    4 > 4 == False
+<=          Less than equal                                 4 <= 4 == True
+>=          Greater than equal                              4 >= 4 == True
+==          Equal                                           4 == 5 == False
+!=          Not Equal                                       4 != 5 == True
+( )         Parenthesis                                     len('hi') == 2
+[ ]         List brackets                                   [1,3,4]
+{ }         Dict curly braces                               {'x':5, 'y':10}
+@           At (decorators)                                 @classmethod
+,           Comma                                           range(0,10)
+:           Colon                                           def X():
+.           Dot                                             self.x = 10
+=           Assign equal                                    x = 10
+;           Semi-colon                                      print("hi"); print("there")
++=          Add and assign                                  x = 1; x += 2
+-=          Subtract and assign                             x = 1; x -= 2
+*=          Multiply and assign                             x = 1; x *= 2
+/=          Divide and assign                               x = 1; x /= 2
+//=         Floor divide and assign                         x = 1; x //= 2
+%=          Modulus assign                                  x = 1; x %= 2
+**=         Power assign                                    x = 1; x **= 2
