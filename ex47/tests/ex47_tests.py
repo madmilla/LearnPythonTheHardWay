@@ -1,5 +1,24 @@
 from nose.tools import *
 from ex47.game import Room
+from ex47.engine import Engine
+from ex47.inventory import Item_list
+
+def test_inventory_add_item():
+	inv_a = Item_list()
+	inv_a.addItem("FlashLight")
+	assert_equal(inv_a.hasItem("FlashLight"), True)
+
+def test_inventory_missing_item():
+	inv_a = Item_list()
+	assert_equal(inv_a.hasItem("Brick"), False)
+
+def test_death():
+	engine_a = Engine("Max Payne")
+	assert_equal(engine_a.death(),"Max Payne")
+
+def test_engine():
+	engine_a = Engine("dev")
+	assert_equal(engine_a.arg, "dev")
 
 def test_room():
 	gold = Room("GoldRoom",
